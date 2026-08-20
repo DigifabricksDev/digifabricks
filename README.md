@@ -1,6 +1,6 @@
 # Digifabricks
 
-Fábrica de software sediada em São Luís, Maranhão. Projetamos, desenvolvemos e operamos plataformas próprias e soluções de tecnologia de ponta a ponta.
+Fábrica de software com atuação nacional. Projetamos, desenvolvemos e operamos plataformas próprias e soluções de tecnologia de ponta a ponta para todo o Brasil.
 
 ---
 
@@ -8,7 +8,7 @@ Fábrica de software sediada em São Luís, Maranhão. Projetamos, desenvolvemos
 
 - **Aquatwo**: Sistema integrado de gestão para parques aquáticos com locação de chalés e controle de acessos.
 - **Fitlover**: Plataforma de bem-estar corporativo com gamificação e integração Strava.
-- **Edun**: Plataforma inteligente com IA generativa para adaptação de materiais pedagógicos voltados a alunos neurodivergentes.
+- **Edunia**: Plataforma inteligente com IA generativa para adaptação de materiais pedagógicos voltados a alunos neurodivergentes.
 - **MonitorAr**: Aplicativo móvel para monitoramento e visualização de qualidade ambiental.
 
 ---
@@ -22,11 +22,12 @@ Fábrica de software sediada em São Luís, Maranhão. Projetamos, desenvolvemos
 
 ## 🌐 Landing Page Institucional
 
-O arquivo `index.html` contém a landing page institucional responsiva, leve e pronta para publicação (GitHub Pages, Vercel, Netlify ou servidor web estático).
+O arquivo `index.html` contém a landing page institucional responsiva, leve e publicada em [https://digifabricks.com.br](https://digifabricks.com.br).
 
 ---
 
 ## 📬 Contato
 
 - **E-mail**: [contato@digifabricks.com.br](mailto:contato@digifabricks.com.br)
-- **Localização**: São Luís — Maranhão, Brasil
+- **WhatsApp**: [(99) 98447-3861](https://wa.me/5599984473861)
+- **Atuação**: Brasil (Atendimento e implantação em todo o território nacional)

@@ -1,426 +1,1108 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Digifabricks — fábrica de software | Aquatwo, Fitlover, Edun</title>
-<meta name="description" content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. São Luís, Maranhão.">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='0' y='0' width='12' height='12' rx='1.5' fill='%23141C1B'/%3E%3Crect x='14' y='0' width='12' height='12' rx='1.5' fill='%230F6E6A'/%3E%3Crect x='0' y='14' width='12' height='12' rx='1.5' fill='%23B4442F'/%3E%3Crect x='14' y='14' width='12' height='12' rx='1.5' fill='%23141C1B' opacity='0.35'/%3E%3C/svg%3E">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digifabricks — fábrica de software | Aquatwo, Fitlover, Edunia</title>
+  <meta name="description"
+    content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. Atuação em todo o Brasil.">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect x='0' y='0' width='12' height='12' rx='1.5' fill='%23141C1B'/%3E%3Crect x='14' y='0' width='12' height='12' rx='1.5' fill='%230F6E6A'/%3E%3Crect x='0' y='14' width='12' height='12' rx='1.5' fill='%23B4442F'/%3E%3Crect x='14' y='14' width='12' height='12' rx='1.5' fill='%23141C1B' opacity='0.35'/%3E%3C/svg%3E">
 
-<!-- Open Graph / WhatsApp / Facebook / LinkedIn -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://digifabricks.com.br">
-<meta property="og:title" content="Digifabricks — fábrica de software | Aquatwo, Fitlover, Edun">
-<meta property="og:description" content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. São Luís, Maranhão.">
-<meta property="og:locale" content="pt_BR">
+  <!-- Open Graph / WhatsApp / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://digifabricks.com.br">
+  <meta property="og:title" content="Digifabricks — fábrica de software | Aquatwo, Fitlover, Edunia">
+  <meta property="og:description"
+    content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. Atuação em todo o Brasil.">
+  <meta property="og:locale" content="pt_BR">
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:url" content="https://digifabricks.com.br">
-<meta name="twitter:title" content="Digifabricks — fábrica de software | Aquatwo, Fitlover, Edun">
-<meta name="twitter:description" content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. São Luís, Maranhão.">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://digifabricks.com.br">
+  <meta name="twitter:title" content="Digifabricks — fábrica de software | Aquatwo, Fitlover, Edunia">
+  <meta name="twitter:description"
+    content="A Digifabricks projeta e opera plataformas próprias: Aquatwo, gestão para parques aquáticos com chalés, além de aplicativos publicados na App Store e Google Play. Atuação em todo o Brasil.">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<style>
-:root{
-  --concreto:#E7E9E4;
-  --concreto-2:#DCE0DA;
-  --ink:#141C1B;
-  --ink-2:#0B1413;
-  --teal:#0F6E6A;
-  --aqua:#34D1C3;
-  --barro:#B4442F;
-  --ambar:#E9A23B;
-  --muted:#5C6D6A;
-  --line:#C9D0C9;
-  --line-dark:#243634;
-  --rad:4px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{
-  background:var(--concreto);
-  color:var(--ink);
-  font-family:'Public Sans',system-ui,sans-serif;
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4{font-family:'Archivo',system-ui,sans-serif;font-variation-settings:'wdth' 112;line-height:1.05;letter-spacing:-.02em;font-weight:700}
-.mono{font-family:'IBM Plex Mono',monospace}
-a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
-img{max-width:100%}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --concreto: #E7E9E4;
+      --concreto-2: #DCE0DA;
+      --ink: #141C1B;
+      --ink-2: #0B1413;
+      --teal: #0F6E6A;
+      --aqua: #34D1C3;
+      --barro: #B4442F;
+      --ambar: #E9A23B;
+      --muted: #5C6D6A;
+      --line: #C9D0C9;
+      --line-dark: #243634;
+      --rad: 4px;
+    }
 
-.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
-.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
-.rule{height:1px;background:var(--line);border:0}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
 
-/* ---------- header ---------- */
-header{position:sticky;top:0;z-index:50;background:rgba(231,233,228,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;gap:28px;height:66px}
-.brand{display:flex;align-items:center;gap:10px;font-family:'Archivo',sans-serif;font-weight:800;font-size:19px;letter-spacing:-.03em;font-variation-settings:'wdth' 118}
-.mark{width:26px;height:26px;display:grid;grid-template:repeat(2,1fr)/repeat(2,1fr);gap:2px;flex:none}
-.mark i{display:block;background:var(--ink);border-radius:1px}
-.mark i:nth-child(2){background:var(--teal)}
-.mark i:nth-child(3){background:var(--barro)}
-.mark i:nth-child(4){background:var(--ink);opacity:.35}
-.nav ul{display:flex;gap:22px;list-style:none;margin-left:auto;font-size:14px;font-weight:500}
-.nav ul a{color:var(--muted);padding:4px 0;border-bottom:1px solid transparent}
-.nav ul a:hover{color:var(--ink);border-color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:var(--rad);font-weight:600;font-size:14.5px;
-  border:1px solid var(--ink);transition:.16s;white-space:nowrap}
-.btn-solid{background:var(--ink);color:var(--concreto)}
-.btn-solid:hover{background:var(--teal);border-color:var(--teal)}
-.btn-ghost:hover{background:var(--ink);color:var(--concreto)}
-.btn-light{border-color:var(--aqua);color:var(--aqua)}
-.btn-light:hover{background:var(--aqua);color:var(--ink-2)}
-.nav .btn{padding:9px 15px}
-@media(max-width:880px){.nav ul{display:none}}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* ---------- hero ---------- */
-.hero{padding:76px 0 84px}
-.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(38px,5.2vw,64px);margin:16px 0 20px;font-variation-settings:'wdth' 108}
-.hero h1 em{font-style:normal;color:var(--teal)}
-.hero p{font-size:18px;color:var(--muted);max-width:33ch}
-.hero-cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+    body {
+      background: var(--concreto);
+      color: var(--ink);
+      font-family: 'Public Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
 
-/* signature: parede de tijolos */
-.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
-.brick{
-  grid-column:span 2;min-height:82px;padding:13px 14px;background:#fff;border:1px solid var(--line);
-  border-radius:var(--rad);display:flex;flex-direction:column;justify-content:space-between;
-  opacity:0;transform:translateY(14px);animation:lay .5s cubic-bezier(.2,.8,.2,1) forwards;
-}
-.brick span{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.brick b{font-family:'Archivo',sans-serif;font-weight:700;font-size:15px;letter-spacing:-.01em;line-height:1.15}
-.brick.wide{grid-column:span 3}
-.brick.full{grid-column:span 6}
-.brick.ink{background:var(--ink);border-color:var(--ink);color:var(--concreto)}
-.brick.ink span{color:var(--aqua)}
-.brick.teal{background:var(--teal);border-color:var(--teal);color:#fff}
-.brick.teal span{color:rgba(255,255,255,.72)}
-.brick.barro{background:var(--barro);border-color:var(--barro);color:#fff}
-.brick.barro span{color:rgba(255,255,255,.75)}
-@keyframes lay{to{opacity:1;transform:none}}
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Archivo', system-ui, sans-serif;
+      font-variation-settings: 'wdth' 112;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      font-weight: 700
+    }
 
-.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.stats div{padding:22px 0}
-.stats div+div{border-left:1px solid var(--line);padding-left:22px}
-.stats b{display:block;font-family:'Archivo',sans-serif;font-size:26px;font-weight:700;letter-spacing:-.02em}
-.stats small{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+    .mono {
+      font-family: 'IBM Plex Mono', monospace
+    }
 
-/* ---------- seções ---------- */
-section{padding:88px 0}
-.sec-head{max-width:62ch;margin-bottom:44px}
-.sec-head h2{font-size:clamp(28px,3.6vw,42px);margin:12px 0 14px}
-.sec-head p{color:var(--muted);font-size:17px}
+    a {
+      color: inherit;
+      text-decoration: none
+    }
 
-/* aquatwo (banda escura) */
-.aqua-sec{background:var(--ink-2);color:var(--concreto)}
-.aqua-sec .sec-head p{color:#94ABA7}
-.aqua-sec .eyebrow{color:var(--aqua)}
-.prod-top{display:flex;align-items:flex-end;justify-content:space-between;gap:30px;flex-wrap:wrap;margin-bottom:44px}
-.logo-aquatwo{font-family:'Archivo',sans-serif;font-weight:800;font-size:clamp(40px,6vw,74px);letter-spacing:-.045em;font-variation-settings:'wdth' 105;line-height:.95}
-.logo-aquatwo em{font-style:normal;color:var(--aqua)}
-.mods{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-dark);border:1px solid var(--line-dark);border-radius:var(--rad);overflow:hidden}
-.mod{background:var(--ink-2);padding:24px 22px;min-height:158px}
-.mod h4{font-size:17px;margin-bottom:8px}
-.mod p{font-size:13.5px;color:#8FA6A2;line-height:1.55}
-.mod .tag{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--aqua);display:block;margin-bottom:12px}
-.acessos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
-.acesso{border:1px solid var(--line-dark);border-radius:var(--rad);padding:22px}
-.acesso h4{font-size:16px;margin-bottom:6px}
-.acesso p{font-size:13.5px;color:#8FA6A2}
-.acesso .dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:8px;vertical-align:1px}
+    :focus-visible {
+      outline: 2px solid var(--teal);
+      outline-offset: 3px
+    }
 
-/* produtos */
-.prods{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#fff;border:1px solid var(--line);border-radius:var(--rad);padding:26px 24px;transition:.18s}
-.card:hover{transform:translateY(-3px);border-color:var(--ink)}
-.card h3{font-size:21px;margin-bottom:8px}
-.card p{font-size:14.5px;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-.chip{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
-  border:1px solid var(--line);border-radius:20px;padding:3px 9px;color:var(--muted)}
+    img {
+      max-width: 100%
+    }
 
-/* integrações */
-.integ{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border:1px solid var(--line);border-radius:var(--rad);overflow:hidden;background:#fff}
-.integ>div{padding:28px 26px;border-bottom:1px solid var(--line)}
-.integ>div:nth-child(odd){border-right:1px solid var(--line)}
-.integ>div:nth-last-child(-n+2){border-bottom:0}
-.integ h4{font-size:18px;margin-bottom:8px}
-.integ p{font-size:14.5px;color:var(--muted)}
-.integ .k{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--barro);display:block;margin-bottom:11px}
+    .wrap {
+      width: min(1180px, calc(100% - 48px));
+      margin-inline: auto
+    }
 
-/* empresa */
-.empresa{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.dl{border-top:1px solid var(--line)}
-.dl div{display:flex;gap:18px;padding:14px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.dl dt{width:150px;flex:none;color:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding-top:3px}
-.dl dd{font-weight:500}
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
 
-/* contato */
-.contato{background:var(--ink);color:var(--concreto);border-radius:var(--rad);padding:56px 48px;display:grid;
-  grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
-.contato h2{font-size:clamp(28px,3.4vw,40px);margin-bottom:14px}
-.contato p{color:#93A8A5;font-size:16.5px;max-width:44ch}
-.contato-links{display:grid;gap:12px}
-.contato-links a{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;
-  border:1px solid var(--line-dark);border-radius:var(--rad);transition:.16s}
-.contato-links a:hover{background:var(--teal);border-color:var(--teal)}
-.contato-links span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#8FA6A2}
-.contato-links a:hover span{color:rgba(255,255,255,.8)}
-.contato-links b{font-family:'Archivo',sans-serif;font-size:16px;font-weight:600}
+    .rule {
+      height: 1px;
+      background: var(--line);
+      border: 0
+    }
 
-footer{padding:40px 0 56px;border-top:1px solid var(--line);margin-top:88px}
-.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+    /* ---------- header ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(231, 233, 228, .88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line)
+    }
 
-/* reveal */
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
-.reveal.on{opacity:1;transform:none}
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      height: 66px
+    }
 
-@media(max-width:980px){
-  .hero-grid,.empresa,.contato{grid-template-columns:1fr;gap:40px}
-  .mods,.prods,.acessos{grid-template-columns:repeat(2,1fr)}
-  .contato{padding:40px 28px}
-}
-@media(max-width:620px){
-  .wrap{width:calc(100% - 32px)}
-  section{padding:64px 0}
-  .stats{grid-template-columns:repeat(2,1fr)}
-  .stats div:nth-child(3){border-left:0;padding-left:0}
-  .stats div:nth-child(n+3){border-top:1px solid var(--line)}
-  .mods,.prods,.acessos,.integ{grid-template-columns:1fr}
-  .integ>div:nth-child(odd){border-right:0}
-  .integ>div{border-bottom:1px solid var(--line)!important}
-  .integ>div:last-child{border-bottom:0!important}
-  .dl div{flex-direction:column;gap:4px}
-  .dl dt{width:auto}
-}
-@media(prefers-reduced-motion:reduce){
-  *{animation:none!important;transition:none!important}
-  .brick,.reveal{opacity:1;transform:none}
-  html{scroll-behavior:auto}
-}
-</style>
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Archivo', sans-serif;
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: -.03em;
+      font-variation-settings: 'wdth' 118
+    }
+
+    .mark {
+      width: 26px;
+      height: 26px;
+      display: grid;
+      grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+      gap: 2px;
+      flex: none
+    }
+
+    .mark i {
+      display: block;
+      background: var(--ink);
+      border-radius: 1px
+    }
+
+    .mark i:nth-child(2) {
+      background: var(--teal)
+    }
+
+    .mark i:nth-child(3) {
+      background: var(--barro)
+    }
+
+    .mark i:nth-child(4) {
+      background: var(--ink);
+      opacity: .35
+    }
+
+    .nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+      margin-left: auto;
+      font-size: 14px;
+      font-weight: 500
+    }
+
+    .nav ul a {
+      color: var(--muted);
+      padding: 4px 0;
+      border-bottom: 1px solid transparent
+    }
+
+    .nav ul a:hover {
+      color: var(--ink);
+      border-color: var(--ink)
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border-radius: var(--rad);
+      font-weight: 600;
+      font-size: 14.5px;
+      border: 1px solid var(--ink);
+      transition: .16s;
+      white-space: nowrap
+    }
+
+    .btn-solid {
+      background: var(--ink);
+      color: var(--concreto)
+    }
+
+    .btn-solid:hover {
+      background: var(--teal);
+      border-color: var(--teal)
+    }
+
+    .btn-ghost:hover {
+      background: var(--ink);
+      color: var(--concreto)
+    }
+
+    .btn-light {
+      border-color: var(--aqua);
+      color: var(--aqua)
+    }
+
+    .btn-light:hover {
+      background: var(--aqua);
+      color: var(--ink-2)
+    }
+
+    .nav .btn {
+      padding: 9px 15px
+    }
+
+    @media(max-width:880px) {
+      .nav ul {
+        display: none
+      }
+    }
+
+    /* ---------- hero ---------- */
+    .hero {
+      padding: 76px 0 84px
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 56px;
+      align-items: center
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5.2vw, 64px);
+      margin: 16px 0 20px;
+      font-variation-settings: 'wdth' 108
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--teal)
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 33ch
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      margin-top: 30px;
+      flex-wrap: wrap
+    }
+
+    /* signature: parede de tijolos */
+    .wall {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 7px
+    }
+
+    .brick {
+      grid-column: span 2;
+      min-height: 82px;
+      padding: 13px 14px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--rad);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      opacity: 0;
+      transform: translateY(14px);
+      animation: lay .5s cubic-bezier(.2, .8, .2, 1) forwards;
+    }
+
+    .brick span {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 9.5px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
+
+    .brick b {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -.01em;
+      line-height: 1.15
+    }
+
+    .brick.wide {
+      grid-column: span 3
+    }
+
+    .brick.full {
+      grid-column: span 6
+    }
+
+    .brick.ink {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: var(--concreto)
+    }
+
+    .brick.ink span {
+      color: var(--aqua)
+    }
+
+    .brick.teal {
+      background: var(--teal);
+      border-color: var(--teal);
+      color: #fff
+    }
+
+    .brick.teal span {
+      color: rgba(255, 255, 255, .72)
+    }
+
+    .brick.barro {
+      background: var(--barro);
+      border-color: var(--barro);
+      color: #fff
+    }
+
+    .brick.barro span {
+      color: rgba(255, 255, 255, .75)
+    }
+
+    @keyframes lay {
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .stats div {
+      padding: 22px 0
+    }
+
+    .stats div+div {
+      border-left: 1px solid var(--line);
+      padding-left: 22px
+    }
+
+    .stats b {
+      display: block;
+      font-family: 'Archivo', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -.02em
+    }
+
+    .stats small {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 3px
+    }
+
+    /* ---------- seções ---------- */
+    section {
+      padding: 88px 0
+    }
+
+    .sec-head {
+      max-width: 62ch;
+      margin-bottom: 44px
+    }
+
+    .sec-head h2 {
+      font-size: clamp(28px, 3.6vw, 42px);
+      margin: 12px 0 14px
+    }
+
+    .sec-head p {
+      color: var(--muted);
+      font-size: 17px
+    }
+
+    /* aquatwo (banda escura) */
+    .aqua-sec {
+      background: var(--ink-2);
+      color: var(--concreto)
+    }
+
+    .aqua-sec .sec-head p {
+      color: #94ABA7
+    }
+
+    .aqua-sec .eyebrow {
+      color: var(--aqua)
+    }
+
+    .prod-top {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 44px
+    }
+
+    .logo-aquatwo {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 800;
+      font-size: clamp(40px, 6vw, 74px);
+      letter-spacing: -.045em;
+      font-variation-settings: 'wdth' 105;
+      line-height: .95
+    }
+
+    .logo-aquatwo em {
+      font-style: normal;
+      color: var(--aqua)
+    }
+
+    .mods {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line-dark);
+      border: 1px solid var(--line-dark);
+      border-radius: var(--rad);
+      overflow: hidden
+    }
+
+    .mod {
+      background: var(--ink-2);
+      padding: 24px 22px;
+      min-height: 158px
+    }
+
+    .mod h4 {
+      font-size: 17px;
+      margin-bottom: 8px
+    }
+
+    .mod p {
+      font-size: 13.5px;
+      color: #8FA6A2;
+      line-height: 1.55
+    }
+
+    .mod .tag {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--aqua);
+      display: block;
+      margin-bottom: 12px
+    }
+
+    .acessos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 16px
+    }
+
+    .acesso {
+      border: 1px solid var(--line-dark);
+      border-radius: var(--rad);
+      padding: 22px
+    }
+
+    .acesso h4 {
+      font-size: 16px;
+      margin-bottom: 6px
+    }
+
+    .acesso p {
+      font-size: 13.5px;
+      color: #8FA6A2
+    }
+
+    .acesso .dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: 1px
+    }
+
+    /* produtos */
+    .prods {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--rad);
+      padding: 26px 24px;
+      transition: .18s
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: var(--ink)
+    }
+
+    .card h3 {
+      font-size: 21px;
+      margin-bottom: 8px
+    }
+
+    .card p {
+      font-size: 14.5px;
+      color: var(--muted)
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 16px
+    }
+
+    .chip {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10.5px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 3px 9px;
+      color: var(--muted)
+    }
+
+    /* integrações */
+    .integ {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: var(--rad);
+      overflow: hidden;
+      background: #fff
+    }
+
+    .integ>div {
+      padding: 28px 26px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .integ>div:nth-child(odd) {
+      border-right: 1px solid var(--line)
+    }
+
+    .integ>div:nth-last-child(-n+2) {
+      border-bottom: 0
+    }
+
+    .integ h4 {
+      font-size: 18px;
+      margin-bottom: 8px
+    }
+
+    .integ p {
+      font-size: 14.5px;
+      color: var(--muted)
+    }
+
+    .integ .k {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10.5px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--barro);
+      display: block;
+      margin-bottom: 11px
+    }
+
+    /* empresa */
+    .empresa {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: start
+    }
+
+    .dl {
+      border-top: 1px solid var(--line)
+    }
+
+    .dl div {
+      display: flex;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14.5px
+    }
+
+    .dl dt {
+      width: 150px;
+      flex: none;
+      color: var(--muted);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11.5px;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding-top: 3px
+    }
+
+    .dl dd {
+      font-weight: 500
+    }
+
+    /* contato */
+    .contato {
+      background: var(--ink);
+      color: var(--concreto);
+      border-radius: var(--rad);
+      padding: 56px 48px;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 44px;
+      align-items: center
+    }
+
+    .contato h2 {
+      font-size: clamp(28px, 3.4vw, 40px);
+      margin-bottom: 14px
+    }
+
+    .contato p {
+      color: #93A8A5;
+      font-size: 16.5px;
+      max-width: 44ch
+    }
+
+    .contato-links {
+      display: grid;
+      gap: 12px
+    }
+
+    .contato-links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 16px 20px;
+      border: 1px solid var(--line-dark);
+      border-radius: var(--rad);
+      transition: .16s
+    }
+
+    .contato-links a:hover {
+      background: var(--teal);
+      border-color: var(--teal)
+    }
+
+    .contato-links span {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: #8FA6A2
+    }
+
+    .contato-links a:hover span {
+      color: rgba(255, 255, 255, .8)
+    }
+
+    .contato-links b {
+      font-family: 'Archivo', sans-serif;
+      font-size: 16px;
+      font-weight: 600
+    }
+
+    footer {
+      padding: 40px 0 56px;
+      border-top: 1px solid var(--line);
+      margin-top: 88px
+    }
+
+    .foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    /* reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .6s ease, transform .6s cubic-bezier(.2, .8, .2, 1)
+    }
+
+    .reveal.on {
+      opacity: 1;
+      transform: none
+    }
+
+    @media(max-width:980px) {
+
+      .hero-grid,
+      .empresa,
+      .contato {
+        grid-template-columns: 1fr;
+        gap: 40px
+      }
+
+      .mods,
+      .prods,
+      .acessos {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .contato {
+        padding: 40px 28px
+      }
+    }
+
+    @media(max-width:620px) {
+      .wrap {
+        width: calc(100% - 32px)
+      }
+
+      section {
+        padding: 64px 0
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .stats div:nth-child(3) {
+        border-left: 0;
+        padding-left: 0
+      }
+
+      .stats div:nth-child(n+3) {
+        border-top: 1px solid var(--line)
+      }
+
+      .mods,
+      .prods,
+      .acessos,
+      .integ {
+        grid-template-columns: 1fr
+      }
+
+      .integ>div:nth-child(odd) {
+        border-right: 0
+      }
+
+      .integ>div {
+        border-bottom: 1px solid var(--line) !important
+      }
+
+      .integ>div:last-child {
+        border-bottom: 0 !important
+      }
+
+      .dl div {
+        flex-direction: column;
+        gap: 4px
+      }
+
+      .dl dt {
+        width: auto
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      * {
+        animation: none !important;
+        transition: none !important
+      }
+
+      .brick,
+      .reveal {
+        opacity: 1;
+        transform: none
+      }
+
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a href="#topo" class="brand">
-      <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      Digifabricks
-    </a>
-    <ul>
-      <li><a href="#aquatwo">Aquatwo</a></li>
-      <li><a href="#produtos">Produtos</a></li>
-      <li><a href="#integracoes">Integrações</a></li>
-      <li><a href="#empresa">Empresa</a></li>
-    </ul>
-    <a href="#contato" class="btn btn-solid">Falar com a gente</a>
-  </div>
-</header>
+  <header>
+    <div class="wrap nav">
+      <a href="#topo" class="brand">
+        <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        Digifabricks
+      </a>
+      <ul>
+        <li><a href="#aquatwo">Aquatwo</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#integracoes">Integrações</a></li>
+        <li><a href="#empresa">Empresa</a></li>
+      </ul>
+      <a href="#contato" class="btn btn-solid">Falar com a gente</a>
+    </div>
+  </header>
 
-<main id="topo">
+  <main id="topo">
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <p class="eyebrow">Fábrica de software · São Luís, Maranhão</p>
-        <h1>A gente constrói sistema para <em>entrar em operação</em>.</h1>
-        <p>Plataformas próprias para negócios que dependem de agenda, dinheiro e gente em campo. Do primeiro cadastro até a recepção usando no dia a dia.</p>
-        <div class="hero-cta">
-          <a href="#aquatwo" class="btn btn-solid">Conhecer o Aquatwo</a>
-          <a href="#contato" class="btn btn-ghost">Falar com a gente</a>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Fábrica de software · Atuação nacional</p>
+          <h1>A gente constrói sistema para <em>entrar em operação</em>.</h1>
+          <p>Plataformas próprias para negócios que dependem de agenda, dinheiro e gente em campo. Do primeiro cadastro
+            até a recepção usando no dia a dia.</p>
+          <div class="hero-cta">
+            <a href="#aquatwo" class="btn btn-solid">Conhecer o Aquatwo</a>
+            <a href="#contato" class="btn btn-ghost">Falar com a gente</a>
+          </div>
+        </div>
+
+        <div class="wall" aria-label="Módulos que construímos">
+          <div class="brick teal wide" style="animation-delay:.05s"><span>Produto</span><b>Aquatwo</b></div>
+          <div class="brick wide" style="animation-delay:.11s"><span>Módulo</span><b>Reservas</b></div>
+          <div class="brick" style="animation-delay:.17s"><span>Módulo</span><b>Calendário</b></div>
+          <div class="brick ink" style="animation-delay:.23s"><span>Módulo</span><b>Financeiro<br>e repasses</b></div>
+          <div class="brick" style="animation-delay:.29s"><span>Módulo</span><b>Check-in</b></div>
+          <div class="brick" style="animation-delay:.35s"><span>Módulo</span><b>Vistorias</b></div>
+          <div class="brick barro" style="animation-delay:.41s"><span>Integração</span><b>Pagamentos</b></div>
+          <div class="brick" style="animation-delay:.47s"><span>Integração</span><b>Catraca</b></div>
+          <div class="brick full" style="animation-delay:.53s"><span>Entrega</span><b>Web · iOS · Android · PWA</b>
+          </div>
         </div>
       </div>
 
-      <div class="wall" aria-label="Módulos que construímos">
-        <div class="brick teal wide" style="animation-delay:.05s"><span>Produto</span><b>Aquatwo</b></div>
-        <div class="brick wide" style="animation-delay:.11s"><span>Módulo</span><b>Reservas</b></div>
-        <div class="brick" style="animation-delay:.17s"><span>Módulo</span><b>Calendário</b></div>
-        <div class="brick ink" style="animation-delay:.23s"><span>Módulo</span><b>Financeiro<br>e repasses</b></div>
-        <div class="brick" style="animation-delay:.29s"><span>Módulo</span><b>Check-in</b></div>
-        <div class="brick" style="animation-delay:.35s"><span>Módulo</span><b>Vistorias</b></div>
-        <div class="brick barro" style="animation-delay:.41s"><span>Integração</span><b>Pagamentos</b></div>
-        <div class="brick" style="animation-delay:.47s"><span>Integração</span><b>Catraca</b></div>
-        <div class="brick full" style="animation-delay:.53s"><span>Entrega</span><b>Web · iOS · Android · PWA</b></div>
+      <div class="wrap" style="margin-top:64px">
+        <div class="stats">
+          <div><b>8 anos</b><small>construindo produto de ponta a ponta</small></div>
+          <div><b>App Store<br>e Google Play</b><small>aplicativos publicados e mantidos</small></div>
+          <div><b>Flutter · React<br>Node · TypeScript</b><small>stack de trabalho</small></div>
+          <div><b>Brasil</b><small>implantação e suporte em todo o país</small></div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="wrap" style="margin-top:64px">
-      <div class="stats">
-        <div><b>8 anos</b><small>construindo produto de ponta a ponta</small></div>
-        <div><b>App Store<br>e Google Play</b><small>aplicativos publicados e mantidos</small></div>
-        <div><b>Flutter · React<br>Node · TypeScript</b><small>stack de trabalho</small></div>
-        <div><b>Maranhão</b><small>atendimento presencial na região</small></div>
+    <!-- AQUATWO -->
+    <section id="aquatwo" class="aqua-sec">
+      <div class="wrap">
+        <div class="prod-top reveal">
+          <div>
+            <p class="eyebrow">Produto principal</p>
+            <div class="logo-aquatwo">aqua<em>two</em></div>
+            <p style="color:#94ABA7;font-size:18px;margin-top:14px;max-width:46ch">
+              Gestão para parques aquáticos que alugam chalés. Reserva, hospedagem, manutenção e o repasse do
+              proprietário no mesmo lugar.
+            </p>
+          </div>
+          <a href="#contato" class="btn btn-light">Agendar uma demonstração</a>
+        </div>
+
+        <div class="mods reveal">
+          <div class="mod"><span class="tag">Recepção</span>
+            <h4>Reservas</h4>
+            <p>Disponibilidade conferida na hora, período selecionado no calendário e confirmação sem telefonema.</p>
+          </div>
+          <div class="mod"><span class="tag">Recepção</span>
+            <h4>Check-in e check-out</h4>
+            <p>Documento, contrato, pulseira e vistoria com foto numa sequência só.</p>
+          </div>
+          <div class="mod"><span class="tag">Operação</span>
+            <h4>Limpeza e manutenção</h4>
+            <p>O chalé só volta a aceitar reserva depois de limpo e inspecionado.</p>
+          </div>
+          <div class="mod"><span class="tag">Operação</span>
+            <h4>Vistorias</h4>
+            <p>Fotos de entrada e saída anexadas à hospedagem. A avaria fica registrada com data e hora.</p>
+          </div>
+          <div class="mod"><span class="tag">Financeiro</span>
+            <h4>Repasses</h4>
+            <p>Comissão calculada por contrato, extrato gerado e pagamento organizado por proprietário.</p>
+          </div>
+          <div class="mod"><span class="tag">Financeiro</span>
+            <h4>Regras de comissão</h4>
+            <p>Nada travado em 50/50: cada contrato pode ter sua divisão, inclusive por temporada.</p>
+          </div>
+          <div class="mod"><span class="tag">Gestão</span>
+            <h4>Painel do dia</h4>
+            <p>Ocupação, receita, chegadas, saídas e o que está pendente numa tela só.</p>
+          </div>
+          <div class="mod"><span class="tag">Gestão</span>
+            <h4>Desempenho</h4>
+            <p>Receita por mês, ranking de chalés e ocupação ao longo do ano.</p>
+          </div>
+        </div>
+
+        <div class="acessos reveal">
+          <div class="acesso">
+            <h4><span class="dot" style="background:var(--aqua)"></span>Administração</h4>
+            <p>No computador da recepção: reservas, calendário, financeiro e operação.</p>
+          </div>
+          <div class="acesso">
+            <h4><span class="dot" style="background:var(--ambar)"></span>Dono do parque</h4>
+            <p>No celular: quanto entrou hoje, ocupação, lucro e o que precisa de decisão.</p>
+          </div>
+          <div class="acesso">
+            <h4><span class="dot" style="background:var(--barro)"></span>Proprietário de chalé</h4>
+            <p>No celular: aprovar reservas, ver ganhos, extratos e fotos das vistorias.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- AQUATWO -->
-  <section id="aquatwo" class="aqua-sec">
-    <div class="wrap">
-      <div class="prod-top reveal">
-        <div>
-          <p class="eyebrow">Produto principal</p>
-          <div class="logo-aquatwo">aqua<em>two</em></div>
-          <p style="color:#94ABA7;font-size:18px;margin-top:14px;max-width:46ch">
-            Gestão para parques aquáticos que alugam chalés. Reserva, hospedagem, manutenção e o repasse do proprietário no mesmo lugar.
+    <!-- PRODUTOS -->
+    <section id="produtos">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Outras plataformas</p>
+          <h2>O que já construímos e mantemos</h2>
+          <p>Produtos que saíram do papel, foram publicados e continuam em manutenção — com tudo que isso exige: loja,
+            atualização, política de privacidade e suporte.</p>
+        </div>
+        <div class="prods reveal">
+          <div class="card">
+            <h3>Fitlover</h3>
+            <p>Plataforma de bem-estar corporativo com gamificação, feita para times de RH acompanharem a atividade
+              física dos colaboradores.</p>
+            <div class="chips"><span class="chip">Flutter</span><span class="chip">Integração Strava</span><span
+                class="chip">iOS e Android</span><span class="chip">Registro INPI</span></div>
+          </div>
+          <div class="card">
+            <h3>Edunia</h3>
+            <p>Ferramenta para professores adaptarem atividades escolares para alunos neurodivergentes, com geração de
+              material pronto para impressão.</p>
+            <div class="chips"><span class="chip">IA generativa</span><span class="chip">Web</span><span
+                class="chip">Educação</span></div>
+          </div>
+          <div class="card">
+            <h3>MonitorAr</h3>
+            <p>Aplicativo de monitoramento com estações em mapa, classificação por faixa e manutenção contínua nas duas
+              lojas.</p>
+            <div class="chips"><span class="chip">Mobile</span><span class="chip">Mapas</span><span class="chip">Dados
+                públicos</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTEGRAÇÕES -->
+    <section id="integracoes" style="background:var(--concreto-2)">
+      <div class="wrap">
+        <div class="sec-head reveal">
+          <p class="eyebrow">Como conversamos com o mundo físico</p>
+          <h2>Sistema bom é o que fala com o equipamento que já está lá</h2>
+          <p>Nossos produtos são construídos com uma camada de integração própria, para conectar o que o cliente já usa
+            sem trocar de fornecedor.</p>
+        </div>
+        <div class="integ reveal">
+          <div>
+            <span class="k">Pagamentos</span>
+            <h4>Maquininha, Pix e link</h4>
+            <p>Cobrança lançada pelo sistema e confirmada automaticamente, sem digitar valor na máquina e sem conferir
+              comprovante à mão.</p>
+          </div>
+          <div>
+            <span class="k">Controle de acesso</span>
+            <h4>Catracas e biometria facial</h4>
+            <p>Liberação de acesso vinculada à hospedagem: o hóspede é cadastrado no check-in e o acesso expira no
+              check-out.</p>
+          </div>
+          <div>
+            <span class="k">Comunicação</span>
+            <h4>Push, e-mail e WhatsApp</h4>
+            <p>Uma central única de avisos: reserva para aprovar, extrato disponível, chalé liberado, manutenção
+              urgente.</p>
+          </div>
+          <div>
+            <span class="k">Infraestrutura</span>
+            <h4>Nuvem, backup e publicação</h4>
+            <p>Ambiente de homologação separado, backup diário e esteira de publicação nas lojas — parte do serviço, não
+              item extra.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMPRESA -->
+    <section id="empresa">
+      <div class="wrap empresa">
+        <div class="reveal">
+          <p class="eyebrow">A empresa</p>
+          <h2 style="font-size:clamp(28px,3.6vw,42px);margin:12px 0 18px">Time pequeno, produto próprio, entrega direta
+          </h2>
+          <p style="color:var(--muted);font-size:17px;margin-bottom:16px">
+            A Digifabricks nasceu da vontade de construir software que fica de pé depois da entrega. Trabalhamos com
+            produto próprio: nós projetamos, desenvolvemos, implantamos e damos suporte.
+          </p>
+          <p style="color:var(--muted);font-size:17px">
+            Sem camada de atendimento no meio — o cliente fala com quem escreve o código. É por isso que conseguimos
+            implantar rápido e ajustar o sistema ao jeito de operar de cada negócio.
           </p>
         </div>
-        <a href="#contato" class="btn btn-light">Agendar uma demonstração</a>
+        <div class="reveal">
+          <dl class="dl">
+            <div>
+              <dt>Razão social</dt>
+              <dd>L D C DE OLIVEIRA</dd>
+            </div>
+            <div>
+              <dt>Nome fantasia</dt>
+              <dd>Digifabricks</dd>
+            </div>
+            <div>
+              <dt>CNPJ</dt>
+              <dd>40.025.597/0001-43</dd>
+            </div>
+            <div>
+              <dt>Abrangência</dt>
+              <dd>Atendimento e implantação em todo o território nacional</dd>
+            </div>
+            <div>
+              <dt>Atuação</dt>
+              <dd>Desenvolvimento e licenciamento de software próprio</dd>
+            </div>
+            <div>
+              <dt>Tecnologia</dt>
+              <dd>Flutter, React, Node.js, TypeScript</dd>
+            </div>
+          </dl>
+        </div>
       </div>
+    </section>
 
-      <div class="mods reveal">
-        <div class="mod"><span class="tag">Recepção</span><h4>Reservas</h4><p>Disponibilidade conferida na hora, período selecionado no calendário e confirmação sem telefonema.</p></div>
-        <div class="mod"><span class="tag">Recepção</span><h4>Check-in e check-out</h4><p>Documento, contrato, pulseira e vistoria com foto numa sequência só.</p></div>
-        <div class="mod"><span class="tag">Operação</span><h4>Limpeza e manutenção</h4><p>O chalé só volta a aceitar reserva depois de limpo e inspecionado.</p></div>
-        <div class="mod"><span class="tag">Operação</span><h4>Vistorias</h4><p>Fotos de entrada e saída anexadas à hospedagem. A avaria fica registrada com data e hora.</p></div>
-        <div class="mod"><span class="tag">Financeiro</span><h4>Repasses</h4><p>Comissão calculada por contrato, extrato gerado e pagamento organizado por proprietário.</p></div>
-        <div class="mod"><span class="tag">Financeiro</span><h4>Regras de comissão</h4><p>Nada travado em 50/50: cada contrato pode ter sua divisão, inclusive por temporada.</p></div>
-        <div class="mod"><span class="tag">Gestão</span><h4>Painel do dia</h4><p>Ocupação, receita, chegadas, saídas e o que está pendente numa tela só.</p></div>
-        <div class="mod"><span class="tag">Gestão</span><h4>Desempenho</h4><p>Receita por mês, ranking de chalés e ocupação ao longo do ano.</p></div>
+    <!-- CONTATO -->
+    <section id="contato" style="padding-top:0">
+      <div class="wrap">
+        <div class="contato reveal">
+          <div>
+            <h2>Quer ver o Aquatwo funcionando?</h2>
+            <p>Marcamos uma demonstração de trinta minutos com os dados do seu negócio. Se fizer sentido, seguimos para
+              o levantamento.</p>
+          </div>
+          <div class="contato-links">
+            <a href="mailto:contato@digifabricks.com.br">
+              <div><span>E-mail</span><br><b>contato@digifabricks.com.br</b></div>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="https://wa.me/5599984473861" target="_blank" rel="noopener noreferrer">
+              <div><span>WhatsApp</span><br><b>(99) 98447-3861</b></div>
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="acessos reveal">
-        <div class="acesso"><h4><span class="dot" style="background:var(--aqua)"></span>Administração</h4><p>No computador da recepção: reservas, calendário, financeiro e operação.</p></div>
-        <div class="acesso"><h4><span class="dot" style="background:var(--ambar)"></span>Dono do parque</h4><p>No celular: quanto entrou hoje, ocupação, lucro e o que precisa de decisão.</p></div>
-        <div class="acesso"><h4><span class="dot" style="background:var(--barro)"></span>Proprietário de chalé</h4><p>No celular: aprovar reservas, ver ganhos, extratos e fotos das vistorias.</p></div>
-      </div>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <span>© <span id="ano">2026</span> Digifabricks · L D C DE OLIVEIRA · Brasil</span>
+      <span class="mono">Aquatwo · Fitlover · Edunia · MonitorAr</span>
     </div>
-  </section>
+  </footer>
 
-  <!-- PRODUTOS -->
-  <section id="produtos">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Outras plataformas</p>
-        <h2>O que já construímos e mantemos</h2>
-        <p>Produtos que saíram do papel, foram publicados e continuam em manutenção — com tudo que isso exige: loja, atualização, política de privacidade e suporte.</p>
-      </div>
-      <div class="prods reveal">
-        <div class="card">
-          <h3>Fitlover</h3>
-          <p>Plataforma de bem-estar corporativo com gamificação, feita para times de RH acompanharem a atividade física dos colaboradores.</p>
-          <div class="chips"><span class="chip">Flutter</span><span class="chip">Integração Strava</span><span class="chip">iOS e Android</span><span class="chip">Registro INPI</span></div>
-        </div>
-        <div class="card">
-          <h3>Edun</h3>
-          <p>Ferramenta para professores adaptarem atividades escolares para alunos neurodivergentes, com geração de material pronto para impressão.</p>
-          <div class="chips"><span class="chip">IA generativa</span><span class="chip">Web</span><span class="chip">Educação</span></div>
-        </div>
-        <div class="card">
-          <h3>MonitorAr</h3>
-          <p>Aplicativo de monitoramento com estações em mapa, classificação por faixa e manutenção contínua nas duas lojas.</p>
-          <div class="chips"><span class="chip">Mobile</span><span class="chip">Mapas</span><span class="chip">Dados públicos</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INTEGRAÇÕES -->
-  <section id="integracoes" style="background:var(--concreto-2)">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <p class="eyebrow">Como conversamos com o mundo físico</p>
-        <h2>Sistema bom é o que fala com o equipamento que já está lá</h2>
-        <p>Nossos produtos são construídos com uma camada de integração própria, para conectar o que o cliente já usa sem trocar de fornecedor.</p>
-      </div>
-      <div class="integ reveal">
-        <div>
-          <span class="k">Pagamentos</span>
-          <h4>Maquininha, Pix e link</h4>
-          <p>Cobrança lançada pelo sistema e confirmada automaticamente, sem digitar valor na máquina e sem conferir comprovante à mão.</p>
-        </div>
-        <div>
-          <span class="k">Controle de acesso</span>
-          <h4>Catracas e biometria facial</h4>
-          <p>Liberação de acesso vinculada à hospedagem: o hóspede é cadastrado no check-in e o acesso expira no check-out.</p>
-        </div>
-        <div>
-          <span class="k">Comunicação</span>
-          <h4>Push, e-mail e WhatsApp</h4>
-          <p>Uma central única de avisos: reserva para aprovar, extrato disponível, chalé liberado, manutenção urgente.</p>
-        </div>
-        <div>
-          <span class="k">Infraestrutura</span>
-          <h4>Nuvem, backup e publicação</h4>
-          <p>Ambiente de homologação separado, backup diário e esteira de publicação nas lojas — parte do serviço, não item extra.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EMPRESA -->
-  <section id="empresa">
-    <div class="wrap empresa">
-      <div class="reveal">
-        <p class="eyebrow">A empresa</p>
-        <h2 style="font-size:clamp(28px,3.6vw,42px);margin:12px 0 18px">Time pequeno, produto próprio, entrega direta</h2>
-        <p style="color:var(--muted);font-size:17px;margin-bottom:16px">
-          A Digifabricks nasceu da vontade de construir software que fica de pé depois da entrega. Trabalhamos com produto próprio: nós projetamos, desenvolvemos, implantamos e damos suporte.
-        </p>
-        <p style="color:var(--muted);font-size:17px">
-          Sem camada de atendimento no meio — o cliente fala com quem escreve o código. É por isso que conseguimos implantar rápido e ajustar o sistema ao jeito de operar de cada negócio.
-        </p>
-      </div>
-      <div class="reveal">
-        <dl class="dl">
-          <div><dt>Razão social</dt><dd>L D C DE OLIVEIRA</dd></div>
-          <div><dt>Nome fantasia</dt><dd>Digifabricks</dd></div>
-          <div><dt>CNPJ</dt><dd>40.025.597/0001-43</dd></div>
-          <div><dt>Cidade</dt><dd>São Luís — Maranhão</dd></div>
-          <div><dt>Atuação</dt><dd>Desenvolvimento e licenciamento de software próprio</dd></div>
-          <div><dt>Tecnologia</dt><dd>Flutter, React, Node.js, TypeScript</dd></div>
-        </dl>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato" style="padding-top:0">
-    <div class="wrap">
-      <div class="contato reveal">
-        <div>
-          <h2>Quer ver o Aquatwo funcionando?</h2>
-          <p>Marcamos uma demonstração de trinta minutos com os dados do seu negócio. Se fizer sentido, seguimos para o levantamento.</p>
-        </div>
-        <div class="contato-links">
-          <a href="mailto:contato@digifabricks.com.br">
-            <div><span>E-mail</span><br><b>contato@digifabricks.com.br</b></div>
-            <span aria-hidden="true">→</span>
-          </a>
-          <a href="https://wa.me/5599984473861" target="_blank" rel="noopener noreferrer">
-            <div><span>WhatsApp</span><br><b>(99) 98447-3861</b></div>
-            <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap foot">
-    <span>© <span id="ano">2026</span> Digifabricks · L D C DE OLIVEIRA · São Luís, MA</span>
-    <span class="mono">Aquatwo · Fitlover · Edun · MonitorAr</span>
-  </div>
-</footer>
-
-<script>
-document.getElementById('ano').textContent = new Date().getFullYear();
-const io = new IntersectionObserver((es) => {
-  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
-}, { threshold: .12 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+    const io = new IntersectionObserver((es) => {
+      es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+    }, { threshold: .12 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
+
 </html>
