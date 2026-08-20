@@ -1,6 +1,6 @@
 # Digifabricks
 
-Fábrica de software com atuação nacional. Projetamos, desenvolvemos e operamos plataformas próprias e soluções de tecnologia de ponta a ponta para todo o Brasil.
+Fábrica de software. Projetamos, desenvolvemos e operamos plataformas próprias e soluções de tecnologia de ponta a ponta.
 
 ---
 
@@ -30,4 +30,3 @@ O arquivo `index.html` contém a landing page institucional responsiva, leve e p
 
 - **E-mail**: [contato@digifabricks.com.br](mailto:contato@digifabricks.com.br)
 - **WhatsApp**: [(99) 98447-3861](https://wa.me/5599984473861)
-- **Atuação**: Brasil (Atendimento e implantação em todo o território nacional)
