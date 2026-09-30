@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" fill="#141C1B" rx="100"/>
+  <g transform="translate(106, 106)">
+    <!-- Top-Left: Concreto -->
+    <rect x="0" y="0" width="140" height="140" rx="16" fill="#E7E9E4"/>
+    <!-- Top-Right: Teal / Aqua -->
+    <rect x="160" y="0" width="140" height="140" rx="16" fill="#34D1C3"/>
+    <!-- Bottom-Left: Barro -->
+    <rect x="0" y="160" width="140" height="140" rx="16" fill="#B4442F"/>
+    <!-- Bottom-Right: Concreto 35% -->
+    <rect x="160" y="160" width="140" height="140" rx="16" fill="#E7E9E4" opacity="0.35"/>
+  </g>
+</svg>
